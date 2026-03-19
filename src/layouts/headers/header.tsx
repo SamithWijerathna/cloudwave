@@ -5,6 +5,7 @@ import Link from "next/link";
 import HeaderMenus from "./header-menus";
 import { Cart } from "@/components/svg";
 import logo_1 from '@/assets/img/logo/logo.png';
+import logo_2 from '@/assets/img/logo/logo-white.png';
 import useSticky from "@/hooks/use-sticky";
 import CartOffcanvas from "@/components/offcanvas/cart-offcanvas";
 import MobileOffcanvas from "@/components/offcanvas/mobile-offcanvas";
@@ -29,6 +30,9 @@ export default function HeaderFour() {
                 <div className="tp-header-logo tp-header-3-logo">
                   <Link className="logo-1" href="/">
                     <Image src={logo_1} alt="logo" />
+                  </Link>
+                  <Link className="logo-2" href="/">
+                    <Image src={logo_2} alt="logo" />
                   </Link>
               
                 </div>

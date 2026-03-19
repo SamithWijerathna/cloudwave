@@ -13,9 +13,14 @@ const menu_data:IMenuDT[] = [
     link: '/about-us'
   },
   {
+    id: 2,
+    title: 'Team',
+    link: '/team'
+  },
+  {
     id: 3,
     title: 'Portfolio',
-    link: '/portfolio-standard'
+    link: '/portfolio-random'
   },
   {
     id: 4,

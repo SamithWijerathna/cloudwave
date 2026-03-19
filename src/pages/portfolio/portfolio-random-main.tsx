@@ -20,6 +20,7 @@ import LineTextThree from "@/components/line-text/line-text-3";
 import FooterTwo from "@/layouts/footers/footer-two";
 // animation
 import { charAnimation, titleAnimation } from "@/utils/title-animation";
+import FooterFour from "@/layouts/footers/footer-four";
 
 const PortfolioRandomMain = () => {
   useScrollSmooth();
@@ -58,9 +59,6 @@ const PortfolioRandomMain = () => {
       </div>
       {/* magic cursor end */}
 
-      {/* header area start */}
-      <HeaderEleven />
-      {/* header area end */}
 
       <div id="smooth-wrapper">
         <div id="smooth-content">
@@ -78,7 +76,7 @@ const PortfolioRandomMain = () => {
                   <div className="row">
                     <div className="col-xl-12">
                       <div className="tm-hero-content">
-                        <span className="tm-hero-subtitle">Liko Studio</span>
+                        <span className="tm-hero-subtitle">Cloudwave</span>
                         <h4 className="tm-hero-title tp-char-animation">
                           Our latest & great projects
                         </h4>
@@ -135,7 +133,7 @@ const PortfolioRandomMain = () => {
           </main>
 
           {/* footer area */}
-          <FooterTwo topCls="" />
+          <FooterFour />
           {/* footer area */}
         </div>
       </div>
