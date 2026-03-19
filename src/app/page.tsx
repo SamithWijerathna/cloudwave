@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import HomeOnePage from "./home/page";
 
 export const metadata: Metadata = {
-  title: "Cloudwave®",
+  title: "Cloudwave ®",
 };
 
 export default function Home() {

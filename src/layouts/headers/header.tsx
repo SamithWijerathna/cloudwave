@@ -50,13 +50,13 @@ export default function HeaderFour() {
               <div className="col-xl-3 col-lg-6 col-md-6 col-6">
                 <div className="tp-header-3-right d-flex align-items-center justify-content-end">
                   <div className="tp-header-3-social d-none d-sm-block">
-                    <a href="#">
-                      <i className="fa-brands fa-twitter"></i>
+                    <a href="https://www.linkedin.com/company/cloudwaveasia/">
+                      <i className="fa-brands fa-linkedin-in"></i>
                     </a>
-                    <a href="#">
+                    <a href="https://facebook.com/cloudwaveasia">
                       <i className="fa-brands fa-facebook"></i>
                     </a>
-                    <a href="#">
+                    <a href="https://www.instagram.com/cloudwave_asia/">
                       <i className="fa-brands fa-instagram"></i>
                     </a>
                   </div>

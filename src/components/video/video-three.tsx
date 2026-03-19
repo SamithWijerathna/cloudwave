@@ -13,7 +13,7 @@ export default function VideoThree() {
           playsInline={true}
         >
           <source
-            src="https://html.hixstudio.net/videos/liko/liko-3.mp4"
+            src="/assets/video/1.mp4"
             type="video/mp4"
           />
         </video>

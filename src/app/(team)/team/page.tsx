@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import TeamMain from "@/pages/team/team";
 
 export const metadata: Metadata = {
-  title: "Liko - Team page",
+  title: "Cloudwave ® - Team",
 };
 
 const TeamPage = () => {

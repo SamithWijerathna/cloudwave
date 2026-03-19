@@ -15,6 +15,7 @@ import FooterTwo from "@/layouts/footers/footer-two";
 // animation
 import {charAnimation,titleAnimation} from "@/utils/title-animation";
 import { hoverBtn } from "@/utils/hover-btn";
+import FooterFour from "@/layouts/footers/footer-four";
 
 const TeamMain = () => {
   useScrollSmooth();
@@ -30,9 +31,7 @@ const TeamMain = () => {
 
   return (
     <Wrapper>
-      {/* header area start */}
-      <HeaderEleven />
-      {/* header area end */}
+ 
 
       <div id="smooth-wrapper">
         <div id="smooth-content">
@@ -43,7 +42,7 @@ const TeamMain = () => {
                 <div className="row">
                   <div className="col-xl-12">
                     <div className="tm-hero-content">
-                      <span className="tm-hero-subtitle">Liko Studio</span>
+                      <span className="tm-hero-subtitle">Cloudwave</span>
                       <h4 className="tm-hero-title tp-char-animation">
                         Talented team
                       </h4>
@@ -71,7 +70,7 @@ const TeamMain = () => {
           </main>
 
           {/* footer area */}
-          <FooterTwo topCls="" whiteFooter={true} />
+          <FooterFour />
           {/* footer area */}
         </div>
       </div>

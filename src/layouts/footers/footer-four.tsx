@@ -44,40 +44,39 @@ export default function FooterFour() {
               <div className="tp-footer-3-widget text-md-center footer-col-3-2">
                 <div className="tp-footer-3-logo-box">
                   <p className="mb-100">
-                    Drop us a line sed id semper <br />
-                    risus in hend rerit.
+                   Let’s connect and  <br />
+                    create something great.
                   </p>
                   <Link className="tp-footer-3-logo p-relative" href="/">
                     <Image src={logo} alt="logo" />
                   </Link>
                   <p className="tp-footer-3-copyright">
-                    {new Date().getFullYear()} Themepure <br /> © All rights reserved
+                    {new Date().getFullYear()} Cloudwave (PVT) Ltd <br /> © All rights reserved
                   </p>
                 </div>
               </div>
             </div>
             <div className="col-xl-4 col-lg-6 col-md-6 mb-60">
               <div className="tp-footer-3-widget-wrapper footer-col-3-3">
-                <div className="tp-footer-3-widget mb-30">
+                <div className="tp-footer-3-widget mb-30"> 
                   <h4 className="tp-footer-3-title">Contact</h4>
                   <div className="tp-footer-2-contact-item">
                     <span>
-                      <a href="https://www.google.com/maps/@23.8223596,90.3656686,15z?entry=ttu"
-                      target="_blank">740 NEW SOUTH HEAD RD, TRIPLE BAY SWFW 3108, NEW YORK</a>
+                      <a href="https://share.google/fbmKHMblsgSRd0YlR"
+                      target="_blank">NO 205, KANDY ROAD, KADUGANNAWA.</a>
                       </span>
                   </div>
                   <div className="tp-footer-2-contact-item">
-                    <span>P: <a href="tel:+725214456">+ 725 214 456</a></span>
-                    <span>E: <a href="mailto:contact@liko.com">contact@liko.com</a></span>
+                    <span>P: <a href="tel:+94750439266">+94 75 043 9266</a></span>
+                    <span>E: <a href="mailto:contact@cloudwave.asia">contact@cloudwave.asia</a></span>
                   </div>
                 </div>
                 <div className="tp-footer-3-widget">
                   <h4 className="tp-footer-3-title">Follow</h4>
                   <div className="tp-footer-3-social">
-                    <a href="#"><i className="fa-brands fa-twitter"></i></a>
-                    <a href="#"><i className="fa-brands fa-facebook-f"></i></a>
-                    <a href="#"><i className="fa-brands fa-instagram"></i></a>
-                    <a href="#"><i className="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://facebook.com/cloudwaveasia"><i className="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/cloudwave_asia/"><i className="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/company/cloudwaveasia/"><i className="fa-brands fa-linkedin-in"></i></a>
                   </div>
                 </div>
               </div>

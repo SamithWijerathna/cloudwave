@@ -69,7 +69,7 @@ const HomeFourMain = () => {
 
 
             {/* project area start */}
-            <ProjectFour />
+            {/* <ProjectFour /> */}
             {/* project area end */}
 
             {/* video area start */}

@@ -7,21 +7,21 @@ import icon from '@/assets/img/home-03/service/sv-icon-1.png';
 const service_data = [
   {
     id: 1,
-    title: "Product design",
-    desc: "Once we have an idea of your needs, a research and design process begins to gain deep knowledge about the business, users <br> and world context.",
-    category: ["Research", "Ui/ UX", "Prototyping"],
+    title: "Social Media Marketing",
+    desc: "Grow your brand presence across social platforms with strategic content creation, community management, and targeted campaigns that engage your audience and drive conversions.",
+    category: ["Content Strategy", "Social Management", "Analytics"],
   },
   {
     id: 2,
-    title: "Web/Mobile",
-    desc: "Once we have an idea of your needs, a research and design process begins to gain deep knowledge about the business, users <br> and world context.",
-    category: ["SEO", "Creative Development", "Varcel"],
+    title: "Web Development",
+    desc: "Build fast, responsive, and scalable web applications with modern technologies. From concept to deployment, we create digital experiences that drive business growth.",
+    category: ["Frontend", "Backend", "Full Stack"],
   },
   {
     id: 3,
-    title: "Consulting",
-    desc: "Once we have an idea of your needs, a research and design process begins to gain deep knowledge about the business, users <br> and world context.",
-    category: ["Creative", "Digital strategy", "MVP"],
+    title: "Software Development",
+    desc: "Custom software solutions tailored to your business needs. We develop robust, secure, and maintainable applications that solve complex problems and streamline operations.",
+    category: ["App Development", "System Design", "Deployment"],
   },
 ];
 export default function ServiceFour() {
