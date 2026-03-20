@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import { Behance, CloseTwo, Dribble, InstagramTwo, Youtube } from "../svg";
+import { Behance, CloseTwo, Dribble, Facebook, InstagramTwo, Linkdin, Youtube } from "../svg";
 
 // images
 import logo from "@/assets/img/logo/logo.png";
@@ -25,7 +25,7 @@ export default function MobileOffcanvas({openOffcanvas,setOpenOffcanvas}: IProps
         <div className="tp-offcanvas-wrapper">
           <div className="tp-offcanvas-top d-flex align-items-center justify-content-between">
             <div className="tp-offcanvas-logo">
-              <a href="#">
+              <a href="/">
                 <Image src={logo} alt="logo" />
               </a>
             </div>
@@ -40,13 +40,13 @@ export default function MobileOffcanvas({openOffcanvas,setOpenOffcanvas}: IProps
           </div>
           <div className="tp-offcanvas-main">
             <div className="tp-offcanvas-content">
-              <h3 className="tp-offcanvas-title">Hello There!</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, </p>
+              <h3 className="tp-offcanvas-title">Welcome to Cloudwave</h3>
+              <p>Your partner in digital transformation. We specialize in web development, software solutions, and social media marketing to elevate your brand.</p>
             </div>
             <div className="tp-main-menu-mobile d-xl-none">
               <MobileMenus/>
             </div>
-            <div className="tp-offcanvas-gallery">
+            {/* <div className="tp-offcanvas-gallery">
               <div className="row gx-2">
                 {gallery_images.map((item, i) => (
                   <div className="col-md-3 col-3" key={i}>
@@ -58,19 +58,19 @@ export default function MobileOffcanvas({openOffcanvas,setOpenOffcanvas}: IProps
                   </div>
                 ))}
               </div>
-            </div>
+            </div> */}
             <div className="tp-offcanvas-contact">
               <h3 className="tp-offcanvas-title sm">Information</h3>
 
               <ul>
                 <li>
-                  <a href="tel:1245654">+ 4 20 7700 1007</a>
+                  <a href="tel:+94750439266">+94 75 043 9266</a>
                 </li>
                 <li>
-                  <a href="mailto:hello@diego.com">hello@diego.com</a>
+                  <a href="mailto:contact@cloudwave.asia">contact@cloudwave.asia</a>
                 </li>
                 <li>
-                  <a href="#">Avenue de Roma 158b, Lisboa</a>
+                  <a href="https://share.google/fbmKHMblsgSRd0YlR" target="_blank" rel="noopener noreferrer">NO 205, KANDY ROAD, KADUGANNAWA</a>
                 </li>
               </ul>
             </div>
@@ -78,16 +78,13 @@ export default function MobileOffcanvas({openOffcanvas,setOpenOffcanvas}: IProps
               <h3 className="tp-offcanvas-title sm">Follow Us</h3>
               <ul>
                 <li>
-                  <a href="#"><InstagramTwo /></a>
+                  <a href="https://facebook.com/cloudwaveasia" target="_blank" rel="noopener noreferrer"><Facebook /></a>
                 </li>
                 <li>
-                  <a href="#"><Dribble /></a>
+                  <a href="https://www.instagram.com/cloudwave_asia/" target="_blank" rel="noopener noreferrer"><InstagramTwo /></a>
                 </li>
                 <li>
-                  <a href="#"> <Behance /></a>
-                </li>
-                <li>
-                  <a href="#"><Youtube /></a>
+                  <a href="https://www.linkedin.com/company/cloudwaveasia/" target="_blank" rel="noopener noreferrer"><Linkdin /></a>
                 </li>
               </ul>
             </div>

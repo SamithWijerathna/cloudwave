@@ -60,7 +60,7 @@ const AboutUsMain = () => {
             {/* fun fact area */}
 
             {/* brand area */}
-            <BrandFive />
+            {/* <BrandFive /> */}
             {/* brand area */}
 
             {/* award area */}

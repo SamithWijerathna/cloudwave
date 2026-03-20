@@ -32,12 +32,12 @@ export default function ServiceHero() {
                   style={{height:"auto"}}
                 />
               </div>
-              <Image
+              {/* <Image
                 className="sv-hero-thumb-shape d-none d-lg-block"
                 src={ser_hero_shape}
                 alt="ser_hero-shape"
                 style={{height:"auto"}}
-              />
+              /> */}
             </div>
           </div>
         </div>

@@ -60,7 +60,7 @@ const ContactMain = () => {
               {/* contact area */}
 
               {/* contact location */}
-              <ContactLocation/>
+              {/* <ContactLocation/> */}
               {/* contact location */}
             </main>
 

@@ -13,53 +13,40 @@ const service_data = [
   {
     id: 1,
     img: ser_img_1,
-    subtitle: "Design Studio",
-    title: "Logos and branding",
-    text: "We create your graphic designs according to your budget and your needs. Reveal your brand image and capture your audience.",
+    subtitle: "Digital Marketing",
+    title: "Social Media Marketing",
+    text: "We develop comprehensive social media strategies to grow your brand presence online. Engage your audience and build meaningful connections across all major platforms.",
     lists: [
-      "Logo Design",
-      "Graphic identity",
-      "Business communication",
-      "Web design",
+      "Social Strategy",
+      "Content Creation",
+      "Community Management",
+      "Analytics & Reporting",
     ],
   },
   {
     id: 2,
     img: ser_img_2,
-    subtitle: "Design Studio",
-    title: "Web Design",
-    text: "We create your graphic designs according to your budget and your needs. Reveal your brand image and capture your audience.",
+    subtitle: "Web Solutions",
+    title: "Web Development",
+    text: "We build responsive, high-performance websites tailored to your business needs. Create powerful digital experiences that convert visitors into customers.",
     lists: [
-      "Logo Design",
-      "Graphic identity",
-      "Business communication",
-      "Web design",
+      "Responsive Design",
+      "Frontend Development",
+      "Backend Solutions",
+      "Web Performance",
     ],
   },
   {
     id: 3,
     img: ser_img_3,
-    subtitle: "Design Studio",
-    title: "Motion-Design",
-    text: "We create your graphic designs according to your budget and your needs. Reveal your brand image and capture your audience.",
+    subtitle: "Software Solutions",
+    title: "Software Development",
+    text: "We develop custom software solutions to streamline your business operations. From web apps to complex enterprise systems, we deliver quality code and scalable architecture.",
     lists: [
-      "Logo Design",
-      "Graphic identity",
-      "Business communication",
-      "Web design",
-    ],
-  },
-  {
-    id: 4,
-    img: ser_img_4,
-    subtitle: "Design Studio",
-    title: "Web Analytics",
-    text: "We create your graphic designs according to your budget and your needs. Reveal your brand image and capture your audience.",
-    lists: [
-      "Logo Design",
-      "Graphic identity",
-      "Business communication",
-      "Web design",
+      "Custom Applications",
+      "System Architecture",
+      "Quality Assurance",
+      "Technical Support",
     ],
   },
 ];
@@ -101,7 +88,7 @@ export default function ServiceSix() {
                           ))}
                         </ul>
                       </div>
-                      <div className="sv-service-btn">
+                      {/* <div className="sv-service-btn">
                         <Link
                           className="tp-btn-zikzak zikzak-inner p-relative"
                           href="/service-details"
@@ -112,7 +99,7 @@ export default function ServiceSix() {
                           </span>
                           <ShapeTwo />
                         </Link>
-                      </div>
+                      </div> */}
                     </div>
                   </div>
                 </div>

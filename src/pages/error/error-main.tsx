@@ -12,15 +12,13 @@ import Wrapper from "@/layouts/wrapper";
 import HeaderEleven from "@/layouts/headers/header-eleven";
 import FooterTwo from "@/layouts/footers/footer-two";
 import error from '@/assets/img/error/error.png';
+import FooterFour from "@/layouts/footers/footer-four";
 
 const ErrorMain = () => {
   useScrollSmooth();
 
   return (
     <Wrapper>
-      {/* header area start */}
-      <HeaderEleven />
-      {/* header area end */}
 
       <div id="smooth-wrapper">
         <div id="smooth-content">
@@ -51,7 +49,7 @@ const ErrorMain = () => {
           </main>
 
           {/* footer area */}
-          <FooterTwo topCls="" />
+          <FooterFour/>
           {/* footer area */}
         </div>
       </div>

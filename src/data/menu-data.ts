@@ -19,16 +19,12 @@ const menu_data:IMenuDT[] = [
   },
   {
     id: 3,
-    title: 'Portfolio',
-    link: '/portfolio-random'
+    title: 'Services',
+    link: '/service'
   },
+  
   {
     id: 4,
-    title: 'Blog',
-    link: '/blog-modern'
-  },
-  {
-    id: 5,
     title: 'Contact',
     link: '/contact'
   }

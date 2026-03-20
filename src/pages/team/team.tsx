@@ -65,7 +65,7 @@ const TeamMain = () => {
             {/* team area */}
 
             {/* testimonial area */}
-            <StudioPanelFour style_2={true}/>
+            {/* <StudioPanelFour style_2={true}/> */}
             {/* testimonial area */}
           </main>
 
