@@ -53,7 +53,7 @@ export default function TeamDetailsArea({ item }: IProps) {
           </div> 
           <div className="col-xl-6 col-lg-6 col-md-5">
             <div className="tm-details-thumb" style={{position: "relative", width: "100%", height: "auto"}}>
-              <img src={item.image} alt="team-details-img" style={{objectFit: "cover"}} />
+              {item?.image && <img src={item.image} alt="team-details-img" style={{objectFit: "cover"}} />}
             </div>
           </div>
         </div>
