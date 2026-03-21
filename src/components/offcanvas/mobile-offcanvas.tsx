@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 import { Behance, CloseTwo, Dribble, Facebook, InstagramTwo, Linkdin, Youtube } from "../svg";
 
 // images
@@ -19,6 +20,20 @@ type IProps = {
 };
 
 export default function MobileOffcanvas({openOffcanvas,setOpenOffcanvas}: IProps) {
+  const router = useRouter();
+
+  useEffect(() => {
+    const handleRouteChange = () => {
+      setOpenOffcanvas(false);
+    };
+
+    router.prefetch("/");
+    window.addEventListener("popstate", handleRouteChange);
+
+    return () => {
+      window.removeEventListener("popstate", handleRouteChange);
+    };
+  }, [setOpenOffcanvas, router]);
   return (
     <>
       <div className={`tp-offcanvas-area ${openOffcanvas ? "opened" : ""}`}>
@@ -44,7 +59,7 @@ export default function MobileOffcanvas({openOffcanvas,setOpenOffcanvas}: IProps
               <p>Your partner in digital transformation. We specialize in web development, software solutions, and social media marketing to elevate your brand.</p>
             </div>
             <div className="tp-main-menu-mobile d-xl-none">
-              <MobileMenus/>
+              <MobileMenus setOpenOffcanvas={setOpenOffcanvas}/>
             </div>
             {/* <div className="tp-offcanvas-gallery">
               <div className="row gx-2">

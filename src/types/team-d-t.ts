@@ -3,4 +3,5 @@ export interface ITeamDT {
   image: string;
   designation: string;
   name: string;
+  description: string;
 }

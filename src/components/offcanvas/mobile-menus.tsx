@@ -5,7 +5,11 @@ import menu_data from "@/data/menu-data";
 import shop_banner from '@/assets/img/menu/shop-menu/banner-1.jpg';
 import port_img from '@/assets/img/menu/portfolio-menu/portfolio.png';
 
-export default function MobileMenus() {
+type IProps = {
+  setOpenOffcanvas: React.Dispatch<React.SetStateAction<boolean>>;
+};
+
+export default function MobileMenus({setOpenOffcanvas}: IProps) {
   const [navTitle, setNavTitle] = React.useState<string>("");
 
   //openMobileMenu
@@ -29,12 +33,15 @@ export default function MobileMenus() {
                   : ""
               } ${menu.home_menus ? "dropdown-opened" : ""}`}
             >
-              <a className="pointer" onClick={() => openMobileMenu(menu.title)}>
+              <Link href={menu.link} className="pointer" onClick={() => {
+                openMobileMenu(menu.title);
+                setOpenOffcanvas(false);
+              }}>
                 {menu.title}
                 <button className="dropdown-toggle-btn">
                   <i className="fa-light fa-plus"></i>
                 </button>
-              </a>
+              </Link>
               {menu.home_menus ? (
                 <div className="tp-submenu submenu tp-mega-menu" style={{ display: navTitle === menu.title ? "block" : "none"}}>
                   <div className="tp-menu-fullwidth">
@@ -44,14 +51,14 @@ export default function MobileMenus() {
                           <div key={i} className="col homemenu">
                             <div className="homemenu-thumb-wrap mb-20">
                               <div className="homemenu-thumb fix">
-                                <Link href={hm.link}>
+                                <Link href={hm.link} onClick={() => setOpenOffcanvas(false)}>
                                   <Image src={hm.img} alt={hm.title} width={512} height={480} style={{ height: "100%" }} />
                                 </Link>
                               </div>
                             </div>
                             <div className="homemenu-content text-center">
                               <h4 className="homemenu-title">
-                                <Link href={hm.link}>{hm.title}</Link>
+                                <Link href={hm.link} onClick={() => setOpenOffcanvas(false)}>{hm.title}</Link>
                               </h4>
                             </div>
                           </div>
@@ -77,7 +84,7 @@ export default function MobileMenus() {
                                     {menu.pages_mega_menu.first.submenus.map(
                                       (sm, i) => (
                                         <li key={i}>
-                                          <Link href={sm.link}>{sm.title}</Link>
+                                          <Link href={sm.link} onClick={() => setOpenOffcanvas(false)}>{sm.title}</Link>
                                         </li>
                                       )
                                     )}
@@ -95,7 +102,7 @@ export default function MobileMenus() {
                                     {menu.pages_mega_menu.second.submenus.map(
                                       (sm, i) => (
                                         <li key={i}>
-                                          <Link href={sm.link}>{sm.title}</Link>
+                                          <Link href={sm.link} onClick={() => setOpenOffcanvas(false)}>{sm.title}</Link>
                                         </li>
                                       )
                                     )}
@@ -119,10 +126,7 @@ export default function MobileMenus() {
                             <div className="tp-shop-banner-content">
                               <h4 className="tp-shop-banner-title">Sale</h4>
                               <span>20% Off all Shoes</span>
-                              <Link
-                                className="tp-shop-btn"
-                                href="/shop-details/1"
-                              >
+                              <Link href="/shop-details/1" onClick={() => setOpenOffcanvas(false)}>
                                 Shop Now
                               </Link>
                             </div>
@@ -160,7 +164,7 @@ export default function MobileMenus() {
                                             <ul>
                                               {portSm.menu_lists.map((psm) => (
                                                 <li key={psm.title}>
-                                                  <Link href={psm.link}>
+                                                  <Link href={psm.link} onClick={() => setOpenOffcanvas(false)}>
                                                     {psm.title}
                                                   </Link>
                                                 </li>
@@ -185,7 +189,7 @@ export default function MobileMenus() {
                                         <ul>
                                           {portSm2.menu_lists.map((psm) => (
                                             <li key={psm.title}>
-                                              <Link href={psm.link}>
+                                              <Link href={psm.link} onClick={() => setOpenOffcanvas(false)}>
                                                 {psm.title}
                                               </Link>
                                             </li>
@@ -213,7 +217,7 @@ export default function MobileMenus() {
                 <ul className="tp-submenu submenu" style={{ display: navTitle === menu.title ? "block" : "none"}}>
                   {menu.dropdown_menus.map((mm, i) => (
                     <li key={i}>
-                      <Link href={mm.link}>{mm.title}</Link>
+                      <Link href={mm.link} onClick={() => setOpenOffcanvas(false)}>{mm.title}</Link>
                     </li>
                   ))}
                 </ul>
