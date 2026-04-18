@@ -18,9 +18,9 @@ const team_data:ITeamDT[] = [
   {
     id:3,
     image:"/assets/img/home-01/team/team-1-3.jpg",
-    designation:"Manager",
+    designation:"Assistant Manager",
     name:"Kaveen Jayasooriya",
-    description: "As Manager, Kaveen plays a crucial role in coordinating projects and ensuring timely delivery. His strong organizational skills and attention to detail help keep our team aligned and focused on our objectives. He brings proven leadership experience and a collaborative approach to team management.",
+    description: "As Assistant Manager, Kaveen plays a crucial role in coordinating projects and ensuring timely delivery. His strong organizational skills and attention to detail help keep our team aligned and focused on our objectives. He brings proven leadership experience and a collaborative approach to team management.",
   },
   {
     id:4,
@@ -29,12 +29,27 @@ const team_data:ITeamDT[] = [
     name:"Meraj Dewapriya",
     description: "As Chief Technology Officer, Meraj drives our technical strategy and innovation pipeline. His deep expertise in modern technologies and architecture ensures Cloudwave stays at the forefront of digital innovation. He leads our technical team with vision and expertise, shaping the future of our digital solutions.",
   },
+    {
+    id:4,
+    image:"/assets/img/home-01/team/team-1-10.jpg",
+    designation:"Head Of Engineering",
+    name:"Dilshan Keerawella",
+    description: "As Head Of Engineering, Dilshan drives our technical strategy and innovation pipeline. His deep expertise in modern technologies and architecture ensures Cloudwave stays at the forefront of digital innovation. He leads our technical team with vision and expertise, shaping the future of our digital solutions.",
+  },
+  
   {
     id:5,
     image:"/assets/img/home-01/team/team-1-9.jpg",
     designation:"CMO & Co-Founder",
     name:"Bhashitha Darmarathna",
     description: "As Chief Marketing Officer and Co-Founder, Bhashitha shapes Cloudwave's brand identity and market presence. His creative insights and strategic marketing expertise help us connect with our audience. His vision for brand excellence and innovative marketing strategies have been instrumental in Cloudwave's growth.",
+  },
+  {
+    id:5,
+    image:"/assets/img/home-01/team/team-1-11.jpg",
+    designation:"Head Of Marketing",
+    name:"Ishan Shanuka",
+    description: "As Head Of Marketing and Co-Founder, Ishan shapes Cloudwave's brand identity and market presence. His creative insights and strategic marketing expertise help us connect with our audience. His vision for brand excellence and innovative marketing strategies have been instrumental in Cloudwave's growth.",
   },
   {
     id:6,

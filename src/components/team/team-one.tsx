@@ -54,6 +54,7 @@ const TeamOne = ({ spacing = "pt-20" }: IProps) => {
             <div className="col-xl-12">
               <div className="tp-team-slider-wrapper">
                 <Swiper
+                centerInsufficientSlides={true}
                   {...slider_setting}
                   modules={[Autoplay, FreeMode]}
                   className="swiper-container tp-team-slider-active"
